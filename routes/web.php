@@ -105,8 +105,6 @@ Route::group(['middleware' => ['sessionCheck']], function () {
     Route::get('/index/Internet', "clientController@Internet")->name("Internet");
     Route::post('/index/Internet', "clientController@Internetdone");
 
-    Route::get('/index/Telephone', "clientController@Telephone")->name("Telephone");
-    Route::post('/index/Telephone', "clientController@Telephonedone");
 
     Route::get('/index/Education', "clientController@Education")->name("Education");
     Route::post('/index/Education', "clientController@Educationdone");
